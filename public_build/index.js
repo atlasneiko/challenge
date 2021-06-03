@@ -16034,7 +16034,6 @@ var AgeDemographic = function AgeDemographic() {
   };
 
   var renderAgeData = function renderAgeData() {
-    console.log('ages', ages);
     var ageArray = Object.keys(ages);
     return ageArray.map(function (age, idx) {
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_core_TableRow__WEBPACK_IMPORTED_MODULE_4__.default, {
@@ -16397,7 +16396,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
 
 var getListOfAgesOfUsersWith = function getListOfAgesOfUsersWith(data) {
-  console.log(data);
   return axios__WEBPACK_IMPORTED_MODULE_0___default()({
     method: 'get',
     url: "/users/age/".concat(data.item)
@@ -54864,7 +54862,6 @@ __webpack_require__.r(__webpack_exports__);
 document.addEventListener('DOMContentLoaded', function () {
   var store = (0,_store_store__WEBPACK_IMPORTED_MODULE_4__.default)({});
   var root = document.getElementById('root');
-  console.log(store.getState());
   react_dom__WEBPACK_IMPORTED_MODULE_2__.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(react_redux__WEBPACK_IMPORTED_MODULE_3__.Provider, {
     store: store
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(_components_App__WEBPACK_IMPORTED_MODULE_0__.default, null)), root);

@@ -25,7 +25,6 @@ const getListOfAgesOfUsersWith = (item) => {
     const usersWithItem = Object.keys(db.itemsOfUserByUsername).filter(
       (username) => db.itemsOfUserByUsername[username].includes(item)
     );
-    console.log(usersWithItem);
 
     const ages = Object.values(db.usersById)
       .filter((user) => usersWithItem.includes(user.username))

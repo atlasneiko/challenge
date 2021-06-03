@@ -53,7 +53,6 @@ const AgeDemographic = () => {
     dispatch(fetchListOfAgesOfUsersWith({ item: currItem }));
   };
   const renderAgeData = () => {
-    console.log('ages', ages);
     const ageArray = Object.keys(ages);
     return ageArray.map((age, idx) => (
       <TableRow key={`${age}-${idx}`}>
